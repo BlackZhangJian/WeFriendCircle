@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">WeFriendCircle</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="username">用户名：</string>
+    <string name="password">密码：</string>
+    <string name="ensure_pwd">确认密码：</string>
+    <string name="register">注册</string>
+    <string name="name">朋友圈注册</string>
+</resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/publish_linearLayout"
+    android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/activity_publish_back_imageButton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@mipmap/back"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/activity_publish_button"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:text="发表"
+                    android:textSize="20sp"
+                    android:background="@null"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+
+                <EditText
+                    android:id="@+id/activity_publish_content_editText"
+                    android:layout_below="@+id/activity_publish_back_imageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@null"
+                    android:hint="这一刻的想法"
+                    android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/img5"
+            android:layout_above="@+id/L1"
+            android:id="@+id/activity_publish_imageView"/>
+
+        <ImageButton
+            android:layout_toRightOf="@+id/activity_publish_imageView"
+            android:layout_above="@+id/L1"
+            android:id="@+id/add_image_imageButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@mipmap/add" />
+
+
+        <LinearLayout
+            android:id="@+id/L1"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="100dp"
+            android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="所在位置"
+                    android:gravity="center_vertical"
+                    android:textSize="20dp"
+                    android:paddingLeft="70dp"
+                    android:textColor="@color/colorBlack"/>
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_above="@+id/tv3"
+                    android:gravity="center_vertical"
+                    android:text="谁可以看"
+                    android:textSize="20dp"
+                    android:paddingLeft="70dp"
+                    android:textColor="@color/colorBlack"/>
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="提醒谁看"
+                    android:textSize="20dp"
+                    android:paddingLeft="70dp"
+                    android:textColor="@color/colorBlack"/>
+
+        </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
